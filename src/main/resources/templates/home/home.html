@@ -17,23 +17,8 @@
 
 
 <div class="container">
-    <header class="d-flex flex-wrap align-items-center justify-content-center py-3 mb-4 border-bottom">
-        <ul class="nav nav-pills">
-            <li class="nav-item"><a href="/home" class="nav-link active" aria-current="page">Home(H)</a></li>
-            <li class="nav-item"><a href="/study/list" class="nav-link">공부기록</a></li>
+    <div th:include="~{/comm/header}"></div>
 
-            <li class="nav-item"><a href="/member/list" class="nav-link">회원목록</a></li>
-
-            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-        </ul>
-
-        <div class="col-md-3 text-end">
-            <button type="button" class="btn btn-outline-primary me-2" onclick="location.href='/login/login'" >Login</button>
-
-            <button type="button" class="btn btn-primary" onclick="location.href='/member/insert'">Sign-up</button>
-
-        </div>
-    </header>
 </div>
 
 
@@ -73,20 +58,8 @@
     </symbol>
 </svg>
 <div class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-            </a>
-            <span class="text-muted">&copy; 2021 Company, Inc - footer</span>
-        </div>
+    <div th:include="~{/comm/footer}"></div>
 
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
-        </ul>
-    </footer>
 </div>
 
 
