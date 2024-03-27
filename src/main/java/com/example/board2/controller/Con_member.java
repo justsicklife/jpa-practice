@@ -17,7 +17,7 @@ public class Con_member {
     StudyMemberService studyMemberService;
 
     @GetMapping("/list")
-    public String doMemberList(Model model) {
+    public String doMemberList(Model model) throws Exception {
 
         List<Study_member> list = studyMemberService.doSelectAll();
 
@@ -33,7 +33,7 @@ public class Con_member {
 
     /* 회원 가입 */
     @PostMapping("/insert_exe")
-    public String doInsExe(@ModelAttribute Study_member study_member) {
+    public String doInsExe(@ModelAttribute Study_member study_member) throws Exception {
         studyMemberService.doInsert(study_member);
         return "redirect:/member/list";
     }

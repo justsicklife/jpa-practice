@@ -15,7 +15,7 @@ class StudyMemberServiceTest {
     StudyMemberService studyMemberService;
     
     @Test
-    public void 멤버모두가져오기() {
+    public void 멤버모두가져오기() throws Exception {
         List<Study_member> studyMembers = studyMemberService.doSelectAll();
         System.out.println("studyMembers = " + studyMembers);
     }

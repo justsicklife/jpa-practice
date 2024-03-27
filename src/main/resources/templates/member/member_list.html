@@ -20,6 +20,7 @@
     <div class="row mb-2">
       <div class="col">아이디</div>
       <div class="col">이름</div>
+      <div class="col">이메일</div>
       <div class="col">권한</div>
       <div class="col">등록일자</div>
       <div class="col">회원삭제</div>
@@ -29,6 +30,7 @@
     <div class="row mb-2">
       <div class="col" th:text="${member.getLoginId()}">ID1</div>
       <div class="col" th:text="${member.getName()}">회원1</div>
+      <div class="col" th:text="${member.getEmail()}">이메일</div>
       <div class="col" th:text="${member.getRole()}">MEMBER</div>
       <div class="col" th:text="${member.getReg_day()}">2022.07.19 08:29</div>
       <div class="col"><a th:href="@{/member/delete(key_id=${member.getMemberId})}">삭제</a></div>
